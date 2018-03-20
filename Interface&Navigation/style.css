@@ -1,0 +1,86 @@
+/*
+Within this stylesheet we edit elements with CSS.
+    Changing fonts, colors etc */
+
+h3 {font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+position: fixed;
+font-size: 24px;
+text-align: left;
+top: 40px;
+left: 100px;
+
+}
+
+#logo{
+position: fixed;
+top: 35px;
+left: 35px;
+}
+.search {
+width: 100%;
+position: relative
+}
+
+.backgroundImage{
+background: url("https://i.imgur.com/T2Q9KaM.jpg");
+-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px);
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+z-index: -1;
+}
+
+.searchTerm {
+position: fixed;
+float: left;
+width: 100%;
+border: 3px solid #1d4f86;
+padding: 5px;
+height: 20px;
+border-radius: 5px;
+outline: none;
+color: #9DBFAF;
+}
+
+.searchTerm:focus{
+ color: #1d4f86;
+}
+
+.searchButton {
+position: absolute;
+right: -50px;
+width: 40px;
+height: 36px;
+border: 1px solid #1d4f86;
+background: #1d4f86;
+text-align: center;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+font-size: 20px;
+}
+
+info {
+font-family: Cambria, Georgia, Times, 'Times New Roman', serif;
+position: absolute;
+font-size: 30px;
+text-align: center;
+top: -55px;
+left: 10px;
+color: #1d4f86;
+}
+
+/*Resize the wrap to see the search bar change! the wrap is the "container" for the searchbar, definition it's position*/
+.wrap{
+width: 35%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
