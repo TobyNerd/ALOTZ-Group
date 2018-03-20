@@ -1,22 +1,34 @@
 <!doctype html>
 
-<html> <!-- It all starts with the html tag, better respect yo' -->
-    <head> <!-- Within the head tag we put edit styles with CSS and put key info like title of the webpage' -->
+<!-- It all starts with the html tag, better respect yo' -->
+<html>
+
+    <!-- Within the head tag we put edit styles with CSS and put key info like title of the webpage' -->
+    <head>
+      <meta charset="utf-8">
+
+      <!-- the title is what appears on the actual tab within the browser -->
       <title>
       Physiosearch
-      </title> <!-- the title is what appears on the actual tab within the browser -->
+      </title>
 
+      <!-- ^ "imports" a stylesheet from the link, which contains a number of
+      icons, we reffer to it in the body as 'fa fa-search' -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-          <!-- ^ "imports" a stylesheet from the link, which contains a number of icons, we reffer to it in the body as 'fa fa-search' -->
+
+      <!-- ^ the link tag defines the browser tab image, here we use our
+      zakilicious logo -->
       <link rel="icon" href="https://i.imgur.com/0CVNTap.png">
-          <!-- ^ the link tag defines the browser tab image, here we use our zakilicious logo -->
-      <link type="text/css" rel="stylesheet" href="./style.css"/>
-          <!-- ^ "imports" the main CSS stylesheet from the local link -->
+
+      <!-- ^ "imports" the main CSS stylesheet from the local link -->
+      <link type="text/css" rel="stylesheet" href="style.css"/>
+
     </head>
 
     <body>
       <div class="wrap">
-        <info><strong>Search for physiotherapists all around Denmark</strong> </info>
+        <info><strong>Search for physiotherapists all around Denmark</strong></info>
+
         <div class="searchBar">
           <input type="text" class="searchTerm" placeholder="Try 'Aalborg' or 'Nordjylland'">
           <button type="submit" class="searchButton">
