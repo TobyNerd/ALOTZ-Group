@@ -2,15 +2,18 @@
 Within this stylesheet we edit elements with CSS. Changing fonts, colors etc
 */
 
-h1 {
+body {
   font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
   font-size: 30px;
   font-weight: bold;
   color: #1d4f86;
+  padding-bottom: 20px;
 }
 
 h3 {
-  font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
   font-size: 24px;
 }
 
@@ -23,7 +26,7 @@ nav {
   background-color: transparent;
 }
 
-#search-cover {
+#search-bar-cover {
   background-color: #fff;
   border-bottom: none;
   border-radius: 5px;
@@ -42,4 +45,13 @@ nav {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.brand-logo {
+  margin-top: 10px;
+  left: 15px;
+}
+
+.cover {
+  padding-top: 150px;
 }
