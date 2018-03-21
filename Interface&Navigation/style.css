@@ -4,18 +4,14 @@ Within this stylesheet we edit elements with CSS. Changing fonts, colors etc
 
 h1 {
   font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
-  position: absolute;
   font-size: 30px;
+  font-weight: bold;
   color: #1d4f86;
 }
 
 h3 {
   font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
-  position: fixed;
   font-size: 24px;
-  text-align: left;
-  top: 40px;
-  left: 100px;
 }
 
 a {
@@ -40,43 +36,4 @@ nav {
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-/*
-Resize the wrap to see the search bar change! the wrap is the "container"
-for the searchbar, definition it's position
-*/
-.cover{
-  width: 35%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.searchButton {
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  border: 1px solid #1d4f86;
-  background: #1d4f86;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #1d4f86;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #1d4f86;
 }
