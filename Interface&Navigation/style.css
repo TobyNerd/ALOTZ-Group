@@ -2,6 +2,13 @@
 Within this stylesheet we edit elements with CSS. Changing fonts, colors etc
 */
 
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  font-size: 30px;
+  color: #1d4f86;
+}
+
 h3 {
   font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
   position: fixed;
@@ -11,20 +18,13 @@ h3 {
   left: 100px;
 }
 
-info {
-  font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
-  position: absolute;
-  font-size: 30px;
-  text-align: center;
-  top: -55px;
-  left: 10px;
-  color: #1d4f86;
+a {
+  color: #1d4f86 !important;
+  font-weight: bold;
 }
 
-#logo{
-  position: fixed;
-  top: 35px;
-  left: 35px;
+nav {
+  background-color: transparent;
 }
 
 .backgroundImage{
@@ -42,13 +42,18 @@ info {
   z-index: -1;
 }
 
-.search {
-  width: 100%;
-  position: relative
+/*
+Resize the wrap to see the search bar change! the wrap is the "container"
+for the searchbar, definition it's position
+*/
+.cover{
+  width: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .searchButton {
-  position: absolute;
   right: -50px;
   width: 40px;
   height: 36px;
@@ -62,7 +67,6 @@ info {
 }
 
 .searchTerm {
-  position: fixed;
   float: left;
   width: 100%;
   border: 3px solid #1d4f86;
@@ -75,16 +79,4 @@ info {
 
 .searchTerm:focus{
   color: #1d4f86;
-}
-
-/*
-Resize the wrap to see the search bar change! the wrap is the "container"
-for the searchbar, definition it's position
-*/
-.wrap{
-  width: 35%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
