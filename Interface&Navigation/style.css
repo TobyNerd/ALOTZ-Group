@@ -47,6 +47,14 @@ nav {
   z-index: -1;
 }
 
+.btn, .btn:focus {
+    background-color: #1D4F86;
+}
+
+.waves-effect:hover {
+    background-color: #2C79CC;
+}
+
 .brand-logo {
   margin-top: 10px;
   left: 15px;
