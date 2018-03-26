@@ -19,7 +19,7 @@ zakilicious logo -->
   <div class="nav-wrapper">
     <a href="index.php" class="brand-logo"><img src="https://i.imgur.com/0CVNTap.png" height="45px" alt=""></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="practitioner.php">Create physiotherapist profile</a></li>
+      <li><a href="register.php">Create physiotherapist profile</a></li>
       <li><a href="signIn.php">Sign in</a></li>
     </ul>
   </div>

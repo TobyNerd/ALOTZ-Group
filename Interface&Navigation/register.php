@@ -5,7 +5,7 @@
     <head>
 
       <title>
-      Physiosearch
+      Register
       </title>
 
     </head>
