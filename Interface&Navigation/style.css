@@ -32,6 +32,18 @@ nav {
   border-radius: 5px;
 }
 
+#email-prompt {
+  background-color: #fff;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+#password-prompt {
+  background-color: #fff;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
 .backgroundImage{
   background: url("https://i.imgur.com/T2Q9KaM.jpg");
   -webkit-filter: blur(5px);
