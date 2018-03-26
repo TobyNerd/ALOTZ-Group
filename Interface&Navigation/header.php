@@ -1,3 +1,7 @@
+<?php
+include_once 'core/init.php'
+?>
+
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
@@ -15,12 +19,33 @@ zakilicious logo -->
 <!-- ^ "imports" the main CSS stylesheet from the local link -->
 <link type="text/css" rel="stylesheet" href="style.css"/>
 
-<nav class="z-depth-0">
+<?php
+$user = new User();
+if($user->isLoggedIn()) {
+?>  
+  <nav class="z-depth-0">
   <div class="nav-wrapper">
-    <a href="index.php" class="brand-logo"><img src="https://i.imgur.com/0CVNTap.png" height="45px" alt=""></a>
+    <a href="#" class="brand-logo"><img src="https://i.imgur.com/0CVNTap.png" height="45px" alt=""></a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="register.php">Create physiotherapist profile</a></li>
-      <li><a href="signIn.php">Sign in</a></li>
+      <li><a href="logout.php">Sign out</a></li>
     </ul>
   </div>
 </nav>
+<?php
+} else {
+?>
+<nav class="z-depth-0">
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo"><img src="https://i.imgur.com/0CVNTap.png" height="45px" alt=""></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#">Become a physiotherapist</a></li>
+      <li><a href="login.php">Sign in</a></li>
+    </ul>
+  </div>
+</nav>
+<?php
+}
+?>
+      
+      
+      

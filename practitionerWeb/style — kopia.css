@@ -1,0 +1,65 @@
+/*
+Within this stylesheet we edit elements with CSS. Changing fonts, colors etc
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Cambria, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #1d4f86;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  color: #1d4f86 !important;
+  font-weight: bold;
+}
+
+nav {
+  background-color: transparent;
+}
+
+#search-bar-cover {
+  background-color: #fff;
+  border-bottom: none;
+  border-radius: 5px;
+}
+
+.backgroundImage{
+  background: url("https://i.imgur.com/T2Q9KaM.jpg");
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn, .btn:focus {
+    background-color: #1D4F86;
+}
+
+.waves-effect:hover {
+    background-color: #2C79CC;
+}
+
+.brand-logo {
+  margin-top: 10px;
+  left: 15px;
+}
+
+.cover {
+  padding-top: 150px;
+}

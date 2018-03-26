@@ -1,3 +1,11 @@
+<?php
+include_once 'core/init.php';
+
+if(Session::exists('home')) {
+  echo '<p>' . Session::flash('home') . '</p>';
+}
+?>
+
 <!doctype html>
 
 <!-- It all starts with the html tag, better respect yo' -->
