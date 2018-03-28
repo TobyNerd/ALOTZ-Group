@@ -32,23 +32,39 @@ if(Input::exists()){
 }
 ?>
 
-<form action="" method="post">
-    <div class="field">
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" autocomplete="off">
-    </div>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+        Physiosearch
+        </title>
+    </head>
 
-    <div class="field">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" autocomplete="off">
-    </div>
+    <body>
+        <?php include 'header.php' ?>
+        <div class="backgroundImage">
+        </div>
 
-    <div class="field">
-        <label for="remember">
-            <input type="checkbox" name="remember" id="remember"> Remember me
-        </label>
-    </div>
+        <div class="login-box">
+            <img src="media/avatar.png" class="avatar">
+            <h1>Sign in</h1>
+            <form action="" method="post">
+                
+                <p>E-mail</p>
+                <input type="text" name="email" id="email" autocomplete="off">
+                
+                <p>Password</p>
+                <input type="password" name="password" id="password" autocomplete="off">
+                
+                <label for="remember">
+                <input type="checkbox" name="remember" id="remember">Remember me
+                </label>
+                
+                <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
+                <input type="submit" value="Sign in">
+            </form>
+        </div> 
+    </body>
+</html>
 
-    <input type="hidden" name="token" value="<?php echo Token::generate(); ?>"> 
-    <input type="submit" value="Sign in">
-</form>
